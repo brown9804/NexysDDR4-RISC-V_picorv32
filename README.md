@@ -1,7 +1,7 @@
 # RISC-V picorv32
 
 ## University of Costa Rica
-## August, 2020
+#### August, 2020
 
 
 ## Integrants
