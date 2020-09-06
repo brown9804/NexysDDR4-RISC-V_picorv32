@@ -1,4 +1,5 @@
 # // @brown9804 Belinda Brown
+# // timna.brown@ucr.ac.cr
 # // Digital Lab
 # // Fibonacci even sequence
 #
