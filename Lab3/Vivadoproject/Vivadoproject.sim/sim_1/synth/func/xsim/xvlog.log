@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/Vivadoproject/Vivadoproject.sim/sim_1/synth/func/xsim/system_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
+ERROR: [VRFC 10-1247] port connections cannot be mixed ordered and named [/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/system_tb.v:27]
+ERROR: [VRFC 10-2865] module 'system_tb' ignored due to previous errors [/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/system_tb.v:3]

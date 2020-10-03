@@ -1,0 +1,11 @@
+0.7
+2020.1
+May 27 2020
+19:59:15
+/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/Vivadoproject/Vivadoproject.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/picorv32/picorv32.v,1600368059,verilog,,/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/system.v,,picorv32;picorv32_axi;picorv32_axi_adapter;picorv32_pcpi_div;picorv32_pcpi_fast_mul;picorv32_pcpi_mul;picorv32_regs;picorv32_wb,,,,,,,,
+/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/Arr_Mult.v,1600455117,verilog,,/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/generate_Mult.v,,arr_multiplier_4b,,,,,,,,
+/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/add_op_block.v,1600539458,verilog,,/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/generate_Mult.v,,add_operation,,,,,,,,
+/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/generate_Mult.v,1600568144,verilog,,/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/picorv32/picorv32.v,/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/add_op_block.v,arr_multiplier_32b,,,,,,,,
+/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/system.v,1600568866,verilog,,/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/system_tb.v,,system,,,,,,,,
+/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/system_tb.v,1600542937,verilog,,,,system_tb,,,,,,,,

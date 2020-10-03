@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"system_tb_func_synth.v" \
+"../../../../../../src/verilog/system_tb.v" \
+
+# Do not sort compile order
+nosort

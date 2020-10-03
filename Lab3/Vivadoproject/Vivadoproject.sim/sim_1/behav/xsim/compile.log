@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/Arr_Mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arr_multiplier_4b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/generate_Mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_operation
+INFO: [VRFC 10-311] analyzing module arr_multiplier_32b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bran/Documentos/Lab digitales/laboratorio-3-b-b-corp/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
