@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Oct  4 12:38:27 2020
+# Process ID: 11182
+# Current directory: /home/bran/Documentos/Lab digitales/laboratorio-4-b-b-corp/vivadoproject/vivadoproject.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/bran/Documentos/Lab digitales/laboratorio-4-b-b-corp/vivadoproject/vivadoproject.sim/sim_1/behav/xsim/xsim.dir/system_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/bran/Documentos/Lab digitales/laboratorio-4-b-b-corp/vivadoproject/vivadoproject.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/bran/Documentos/Lab digitales/laboratorio-4-b-b-corp/vivadoproject/vivadoproject.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/bran/Documentos/Lab -notrace
+source digitales/laboratorio-4-b-b-corp/vivadoproject/vivadoproject.sim/sim_1/behav/xsim/xsim.dir/system_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+couldn't read file "digitales/laboratorio-4-b-b-corp/vivadoproject/vivadoproject.sim/sim_1/behav/xsim/xsim.dir/system_tb_behav/webtalk/xsim_webtalk.tcl": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct  4 12:38:28 2020...

@@ -1,0 +1,9 @@
+0.7
+2020.1
+May 27 2020
+19:59:15
+/home/bran/Documentos/Lab digitales/laboratorio-4-b-b-corp/src/picorv32/picorv32.v,1601836680,verilog,,/home/bran/Documentos/Lab digitales/laboratorio-4-b-b-corp/src/verilog/system.v,,picorv32;picorv32_axi;picorv32_axi_adapter;picorv32_pcpi_div;picorv32_pcpi_fast_mul;picorv32_pcpi_mul;picorv32_regs;picorv32_wb,,,,,,,,
+/home/bran/Documentos/Lab digitales/laboratorio-4-b-b-corp/src/verilog/7_segment_dec.v,1601850340,verilog,,/home/bran/Documentos/Lab digitales/laboratorio-4-b-b-corp/src/picorv32/picorv32.v,,x7_segment_dec,,,,,,,,
+/home/bran/Documentos/Lab digitales/laboratorio-4-b-b-corp/src/verilog/system.v,1601850651,verilog,,/home/bran/Documentos/Lab digitales/laboratorio-4-b-b-corp/src/verilog/system_tb.v,,system,,,,,,,,
+/home/bran/Documentos/Lab digitales/laboratorio-4-b-b-corp/src/verilog/system_tb.v,1601836695,verilog,,,,system_tb,,,,,,,,
+/home/bran/Documentos/Lab digitales/laboratorio-4-b-b-corp/vivadoproject/vivadoproject.sim/sim_1/behav/xsim/glbl.v,1601833799,verilog,,,,glbl,,,,,,,,
