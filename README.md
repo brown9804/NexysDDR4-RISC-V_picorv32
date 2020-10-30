@@ -1,4 +1,4 @@
-# RISC-V picorv32
+# Nexys DDR 4 RISC-V picorv32
 
 ## University of Costa Rica
 #### August, 2020
