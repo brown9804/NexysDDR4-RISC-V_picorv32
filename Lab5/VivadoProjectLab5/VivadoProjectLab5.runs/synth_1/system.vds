@@ -1,0 +1,383 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Oct 20 10:12:22 2020
+# Process ID: 11504
+# Current directory: /home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/VivadoProjectLab5/VivadoProjectLab5.runs/synth_1
+# Command line: vivado -log system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+# Log file: /home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/VivadoProjectLab5/VivadoProjectLab5.runs/synth_1/system.vds
+# Journal file: /home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/VivadoProjectLab5/VivadoProjectLab5.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source system.tcl -notrace
+Command: synth_design -top system -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11564
+WARNING: [Synth 8-2292] literal value truncated to fit in 7 bits [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/7_segment_dec.v:63]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 2115.023 ; gain = 0.000 ; free physical = 830 ; free virtual = 5494
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system' [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:3]
+	Parameter FAST_MEMORY bound to: 0 - type: integer 
+	Parameter MEM_SIZE bound to: 16384 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '../firmware/firmware.hex' is read successfully [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:68]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:108]
+INFO: [Synth 8-6157] synthesizing module 'picorv32' [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/picorv32/picorv32.v:57]
+	Parameter ENABLE_COUNTERS bound to: 1'b1 
+	Parameter ENABLE_COUNTERS64 bound to: 1'b1 
+	Parameter ENABLE_REGS_16_31 bound to: 1'b1 
+	Parameter ENABLE_REGS_DUALPORT bound to: 1'b1 
+	Parameter LATCHED_MEM_RDATA bound to: 1'b0 
+	Parameter TWO_STAGE_SHIFT bound to: 1'b1 
+	Parameter BARREL_SHIFTER bound to: 1'b0 
+	Parameter TWO_CYCLE_COMPARE bound to: 1'b0 
+	Parameter TWO_CYCLE_ALU bound to: 1'b0 
+	Parameter COMPRESSED_ISA bound to: 1'b0 
+	Parameter CATCH_MISALIGN bound to: 1'b1 
+	Parameter CATCH_ILLINSN bound to: 1'b1 
+	Parameter ENABLE_PCPI bound to: 1'b0 
+	Parameter ENABLE_MUL bound to: 1'b0 
+	Parameter ENABLE_FAST_MUL bound to: 1'b0 
+	Parameter ENABLE_DIV bound to: 1'b0 
+	Parameter ENABLE_IRQ bound to: 1'b0 
+	Parameter ENABLE_IRQ_QREGS bound to: 1'b1 
+	Parameter ENABLE_IRQ_TIMER bound to: 1'b1 
+	Parameter ENABLE_TRACE bound to: 1'b0 
+	Parameter REGS_INIT_ZERO bound to: 1'b0 
+	Parameter MASKED_IRQ bound to: 0 - type: integer 
+	Parameter LATCHED_IRQ bound to: -1 - type: integer 
+	Parameter PROGADDR_RESET bound to: 0 - type: integer 
+	Parameter PROGADDR_IRQ bound to: 16 - type: integer 
+	Parameter STACKADDR bound to: -1 - type: integer 
+	Parameter irq_timer bound to: 0 - type: integer 
+	Parameter irq_ebreak bound to: 1 - type: integer 
+	Parameter irq_buserror bound to: 2 - type: integer 
+	Parameter irqregs_offset bound to: 32 - type: integer 
+	Parameter regfile_size bound to: 32 - type: integer 
+	Parameter regindex_bits bound to: 5 - type: integer 
+	Parameter WITH_PCPI bound to: 1'b0 
+	Parameter TRACE_BRANCH bound to: 36'b000100000000000000000000000000000000 
+	Parameter TRACE_ADDR bound to: 36'b001000000000000000000000000000000000 
+	Parameter TRACE_IRQ bound to: 36'b100000000000000000000000000000000000 
+	Parameter cpu_state_trap bound to: 8'b10000000 
+	Parameter cpu_state_fetch bound to: 8'b01000000 
+	Parameter cpu_state_ld_rs1 bound to: 8'b00100000 
+	Parameter cpu_state_ld_rs2 bound to: 8'b00010000 
+	Parameter cpu_state_exec bound to: 8'b00001000 
+	Parameter cpu_state_shift bound to: 8'b00000100 
+	Parameter cpu_state_stmem bound to: 8'b00000010 
+	Parameter cpu_state_ldmem bound to: 8'b00000001 
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/picorv32/picorv32.v:1248]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/picorv32/picorv32.v:1294]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/picorv32/picorv32.v:1294]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/picorv32/picorv32.v:1477]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/picorv32/picorv32.v:1477]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/picorv32/picorv32.v:1563]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/picorv32/picorv32.v:1563]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/picorv32/picorv32.v:1563]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/picorv32/picorv32.v:1563]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/picorv32/picorv32.v:1563]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32' (1#1) [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/picorv32/picorv32.v:57]
+WARNING: [Synth 8-7071] port 'pcpi_valid' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'pcpi_insn' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'pcpi_rs1' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'pcpi_rs2' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'pcpi_wr' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'pcpi_rd' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'pcpi_wait' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'pcpi_ready' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'irq' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'eoi' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'trace_valid' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'trace_data' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:47]
+WARNING: [Synth 8-7023] instance 'picorv32_core' of module 'picorv32' has 27 connections declared, but only 15 given [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:47]
+INFO: [Synth 8-6157] synthesizing module 'x7_segment_dec' [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/7_segment_dec.v:8]
+INFO: [Synth 8-226] default block is never used [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/7_segment_dec.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'x7_segment_dec' (2#1) [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/7_segment_dec.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'system' (3#1) [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/verilog/system.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2115.023 ; gain = 0.000 ; free physical = 852 ; free virtual = 5518
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2115.023 ; gain = 0.000 ; free physical = 851 ; free virtual = 5517
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2115.023 ; gain = 0.000 ; free physical = 851 ; free virtual = 5517
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2115.023 ; gain = 0.000 ; free physical = 843 ; free virtual = 5509
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/constraints/system.xdc]
+WARNING: [Vivado 12-584] No ports matched 'j15_switch'. [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/constraints/system.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/constraints/system.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/constraints/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/src/constraints/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2210.699 ; gain = 0.000 ; free physical = 737 ; free virtual = 5418
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2210.699 ; gain = 0.000 ; free physical = 737 ; free virtual = 5418
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2210.699 ; gain = 95.676 ; free physical = 813 ; free virtual = 5494
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2210.699 ; gain = 95.676 ; free physical = 813 ; free virtual = 5494
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2210.699 ; gain = 95.676 ; free physical = 813 ; free virtual = 5494
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6841] Block RAM (memory_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 2210.699 ; gain = 95.676 ; free physical = 804 ; free virtual = 5485
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               32 Bit    Registers := 15    
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 80    
++---RAMs : 
+	             512K Bit	(16384 X 32 bit)          RAMs := 1     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 30    
+	   8 Input   32 Bit        Muxes := 3     
+	   5 Input   32 Bit        Muxes := 1     
+	   6 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 7     
+	   9 Input   32 Bit        Muxes := 2     
+	   7 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 2     
+	   9 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   8 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   9 Input    5 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   6 Input    2 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 26    
+	   2 Input    1 Bit        Muxes := 20    
+	   4 Input    1 Bit        Muxes := 11    
+	   7 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6841] Block RAM (memory_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:54 . Memory (MB): peak = 2210.699 ; gain = 95.676 ; free physical = 763 ; free virtual = 5453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|system      | memory_reg | 16 K x 32(READ_FIRST)  | W |   | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+---------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives   | 
++------------+---------------------------+-----------+----------------------+--------------+
+|system      | picorv32_core/cpuregs_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------+---------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:07 . Memory (MB): peak = 2210.699 ; gain = 95.676 ; free physical = 626 ; free virtual = 5323
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:23 . Memory (MB): peak = 2259.371 ; gain = 144.348 ; free physical = 592 ; free virtual = 5288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+---------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives   | 
++------------+---------------------------+-----------+----------------------+--------------+
+|system      | picorv32_core/cpuregs_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------+---------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:26 . Memory (MB): peak = 2267.379 ; gain = 152.355 ; free physical = 570 ; free virtual = 5266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:21 ; elapsed = 00:01:31 . Memory (MB): peak = 2273.316 ; gain = 158.293 ; free physical = 569 ; free virtual = 5265
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:21 ; elapsed = 00:01:31 . Memory (MB): peak = 2273.316 ; gain = 158.293 ; free physical = 569 ; free virtual = 5265
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 2273.316 ; gain = 158.293 ; free physical = 569 ; free virtual = 5266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 2273.316 ; gain = 158.293 ; free physical = 569 ; free virtual = 5266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 2273.316 ; gain = 158.293 ; free physical = 569 ; free virtual = 5265
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 2273.316 ; gain = 158.293 ; free physical = 569 ; free virtual = 5265
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   340|
+|3     |LUT1     |   181|
+|4     |LUT2     |   393|
+|5     |LUT3     |   334|
+|6     |LUT4     |   504|
+|7     |LUT5     |   305|
+|8     |LUT6     |   585|
+|9     |MUXF7    |     1|
+|10    |RAM32M   |    12|
+|11    |RAMB36E1 |    16|
+|27    |FDRE     |   594|
+|28    |FDSE     |    27|
+|29    |IBUF     |     2|
+|30    |OBUF     |    25|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 2273.316 ; gain = 158.293 ; free physical = 569 ; free virtual = 5265
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 2273.316 ; gain = 62.617 ; free physical = 623 ; free virtual = 5319
+Synthesis Optimization Complete : Time (s): cpu = 00:01:22 ; elapsed = 00:01:32 . Memory (MB): peak = 2273.324 ; gain = 158.293 ; free physical = 623 ; free virtual = 5319
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2273.324 ; gain = 0.000 ; free physical = 695 ; free virtual = 5394
+INFO: [Netlist 29-17] Analyzing 369 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2280.254 ; gain = 0.000 ; free physical = 639 ; free virtual = 5338
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 25 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:59 . Memory (MB): peak = 2280.254 ; gain = 165.383 ; free physical = 835 ; free virtual = 5534
+INFO: [Common 17-1381] The checkpoint '/home/bran/Documentos/Lab digitales/laboratorio-5-b-b-corp/VivadoProjectLab5/VivadoProjectLab5.runs/synth_1/system.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 20 10:14:44 2020...
