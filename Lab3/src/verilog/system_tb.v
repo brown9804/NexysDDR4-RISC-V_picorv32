@@ -17,7 +17,7 @@ module system_tb;
 	wire trap;
 	wire [7:0] out_byte;
 	wire out_byte_en;
-	//wire [31:0] out_fact;
+	wire [31:0] out_fact;
 	
 /////////////////////////////////
 //////////// Ex 2
@@ -38,17 +38,17 @@ module system_tb;
         .out_byte_en(out_byte_en),
 		
 ////////// Ex1 
-		//.out_fact   (out_fact   ),
+		.out_fact   (out_fact   ),
 
 ///////////////////////////////////////
 //// Ex2
 //////////////////////////////////////////
-		.out_arr_mult (out_arr_mult)
+		.out_arr_mult (out_arr_mult),
 	
 /////////////////////////////////
 //////////// Ex 3
-		//.out_arr_mult_lsb (out_arr_mult_lsb),
-		//.out_arr_mult_msb (out_arr_mult_msb)
+		.out_arr_mult_lsb (out_arr_mult_lsb),
+		.out_arr_mult_msb (out_arr_mult_msb)
 //////////////////////////////////	
 );
 
@@ -63,14 +63,14 @@ module system_tb;
 			
 ////////////////////////////Ex1
 
-		//	$write("%c", out_fact);			
+			$write("%c", out_fact);			
 ///////////////////////////////////////////
 ////////////// Ex2
 			$write("%c", out_arr_mult);
 ////////////////////////////////////////////	
 ////////////// Ex2
-		//	$write("%c", out_arr_mult_lsb);
-		//	$write("%c", out_arr_mult_msb);
+			$write("%c", out_arr_mult_lsb);
+			$write("%c", out_arr_mult_msb);
 ////////////////////////////////////////////				
 			
 			$fflush;

@@ -5,16 +5,16 @@ module system (
 	input            resetn,
 	output           trap,
 	output reg [7:0] out_byte,
-	//output reg [31:0] out_fact,
-	output reg       out_byte_en
+	output reg [31:0] out_fact,
+	output reg       out_byte_en,
 ////////////////////////////////////////////////////////////
-	//output reg [7:0] out_arr_mult,
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-	///output reg [31:0] out_arr_mult_lsb,
+	output reg [7:0] out_arr_mult,
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
-	//output reg [31:0] out_arr_mult_msb
+	output reg [31:0] out_arr_mult_lsb,
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+	output reg [31:0] out_arr_mult_msb
 ////////////////////////////////////////////////////////////
 	
 );
@@ -140,7 +140,7 @@ module system (
 			if (mem_la_write && mem_la_addr == 32'h1000_0000) begin
 				out_byte_en <= 1;
 				out_byte <= mem_la_wdata;
-				//out_fact <= mem_la_wdata;
+				out_fact <= mem_la_wdata;
 			end
 			
 ////////////////////////////////////////////////////////////
@@ -155,7 +155,7 @@ module system (
 			
 			if (mem_la_write && mem_la_addr == 32'h0FFF_FFF8) begin
 				out_byte_en <= 1;
-				//mem_rdata <= out_arr_mult;
+				mem_rdata <= out_arr_mult;
 			end
 ////////////////////////////////////////////////////////////	
 			
@@ -207,7 +207,7 @@ module system (
 				mem_valid && !mem_ready && |mem_wstrb && mem_addr == 32'h1000_0000: begin
 					out_byte_en <= 1;
 					out_byte <= mem_wdata;
-				//	out_fact <= mem_la_wdata;
+					out_fact <= mem_la_wdata;
 					mem_ready <= 1;
 				end
 			endcase
@@ -216,9 +216,9 @@ module system (
 	
 /////////////////// Exercises ////////////////////	
  always @(*) begin
-	//out_arr_mult = result_arr_mult;
-	//out_arr_mult_msb = result[63:32];
-	//out_arr_mult_lsb = result[31:0];
+	out_arr_mult = result_arr_mult;
+	out_arr_mult_msb = result[63:32];
+	out_arr_mult_lsb = result[31:0];
 	//out_arr_mult = result;
  end
 	
