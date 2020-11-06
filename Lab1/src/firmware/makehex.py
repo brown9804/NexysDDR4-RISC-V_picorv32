@@ -24,4 +24,3 @@ for i in range(nwords):
         print("%02x%02x%02x%02x" % (w[3], w[2], w[1], w[0]))
     else:
         print("0")
-

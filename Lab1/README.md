@@ -40,3 +40,4 @@ cd tools/scripts
 # Opens Vivado (assumes vivado is in the PATH)
 vivado &
 ```
+

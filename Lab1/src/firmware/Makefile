@@ -1,4 +1,3 @@
-
 TOOLCHAIN_PREFIX = riscv32-unknown-elf-
 
 all: firmware.S firmware.c firmware.lds
