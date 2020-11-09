@@ -1,0 +1,12 @@
+
+{ 
+    crc :  6003318707431718211  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto c4751bafb83f4faf8f77bee14cbb23ba --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot picorv32_axi_behav xil_defaultlib.picorv32_axi xil_defaultlib.glbl" , 
+    buildDate : "May 27 2020" , 
+    buildTime : "19:59:15" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/picorv32_axi_behav/xsimk\"   \"xsim.dir/picorv32_axi_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/picorv32_axi_behav/obj/xsim_1.lnx64.o\" -L\"/opt/Vivado/2020.1/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

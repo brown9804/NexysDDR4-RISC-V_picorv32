@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="system_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="system_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="11fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="203"></NameColumnWidth>
+      <ValueColumnWidth column_width="75"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="42" />
+   <wvobject type="logic" fp_name="/system_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/resetn">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/trap">
+      <obj_property name="ElementShortName">trap</obj_property>
+      <obj_property name="ObjectShortName">trap</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/out_byte">
+      <obj_property name="ElementShortName">out_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_byte[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/out_byte_en">
+      <obj_property name="ElementShortName">out_byte_en</obj_property>
+      <obj_property name="ObjectShortName">out_byte_en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/cache_2_way_random/hit">
+      <obj_property name="ElementShortName">hit[31:0]</obj_property>
+      <obj_property name="ObjectShortName">hit[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/cache_2_way_random/miss">
+      <obj_property name="ElementShortName">miss[31:0]</obj_property>
+      <obj_property name="ObjectShortName">miss[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/out_byte">
+      <obj_property name="ElementShortName">out_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_byte[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/uut/out_byte_en">
+      <obj_property name="ElementShortName">out_byte_en</obj_property>
+      <obj_property name="ObjectShortName">out_byte_en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/Anode_on">
+      <obj_property name="ElementShortName">Anode_on[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Anode_on[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/Led_output">
+      <obj_property name="ElementShortName">Led_output[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Led_output[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/cache_2_way_random/OFFSET_ITER">
+      <obj_property name="ElementShortName">OFFSET_ITER[2:0]</obj_property>
+      <obj_property name="ObjectShortName">OFFSET_ITER[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/uut/mem_valid">
+      <obj_property name="ElementShortName">mem_valid</obj_property>
+      <obj_property name="ObjectShortName">mem_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/uut/mem_instr">
+      <obj_property name="ElementShortName">mem_instr</obj_property>
+      <obj_property name="ObjectShortName">mem_instr</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/uut/mem_ready">
+      <obj_property name="ElementShortName">mem_ready</obj_property>
+      <obj_property name="ObjectShortName">mem_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/uut/wmem_ready">
+      <obj_property name="ElementShortName">wmem_ready</obj_property>
+      <obj_property name="ObjectShortName">wmem_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/mem_addr">
+      <obj_property name="ElementShortName">mem_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/mem_wdata">
+      <obj_property name="ElementShortName">mem_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/mem_wstrb">
+      <obj_property name="ElementShortName">mem_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/mem_rdata">
+      <obj_property name="ElementShortName">mem_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/wmem_rdata">
+      <obj_property name="ElementShortName">wmem_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wmem_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/uut/mem_la_read">
+      <obj_property name="ElementShortName">mem_la_read</obj_property>
+      <obj_property name="ObjectShortName">mem_la_read</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/uut/mem_la_write">
+      <obj_property name="ElementShortName">mem_la_write</obj_property>
+      <obj_property name="ObjectShortName">mem_la_write</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/mem_la_addr">
+      <obj_property name="ElementShortName">mem_la_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_la_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/mem_la_wdata">
+      <obj_property name="ElementShortName">mem_la_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_la_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/mem_la_wstrb">
+      <obj_property name="ElementShortName">mem_la_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_la_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/m_read_data">
+      <obj_property name="ElementShortName">m_read_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_read_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/uut/m_read_en">
+      <obj_property name="ElementShortName">m_read_en</obj_property>
+      <obj_property name="ObjectShortName">m_read_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/uut/cache_mem_valid">
+      <obj_property name="ElementShortName">cache_mem_valid</obj_property>
+      <obj_property name="ObjectShortName">cache_mem_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/uut/mem_cache_ready">
+      <obj_property name="ElementShortName">mem_cache_ready</obj_property>
+      <obj_property name="ObjectShortName">mem_cache_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/uut/cache_mem_instr">
+      <obj_property name="ElementShortName">cache_mem_instr</obj_property>
+      <obj_property name="ObjectShortName">cache_mem_instr</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/cache_mem_addr">
+      <obj_property name="ElementShortName">cache_mem_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cache_mem_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/mem_cache_rdata">
+      <obj_property name="ElementShortName">mem_cache_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_cache_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/cache_mem_wdata">
+      <obj_property name="ElementShortName">cache_mem_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cache_mem_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/uut/cache_mem_wstrb">
+      <obj_property name="ElementShortName">cache_mem_wstrb</obj_property>
+      <obj_property name="ObjectShortName">cache_mem_wstrb</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/FAST_MEMORY">
+      <obj_property name="ElementShortName">FAST_MEMORY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FAST_MEMORY[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/MEM_SIZE">
+      <obj_property name="ElementShortName">MEM_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/CACHE_SIZE">
+      <obj_property name="ElementShortName">CACHE_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CACHE_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/ADDR_SIZE">
+      <obj_property name="ElementShortName">ADDR_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/WORD_SIZE">
+      <obj_property name="ElementShortName">WORD_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WORD_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/BLOCK_SIZE">
+      <obj_property name="ElementShortName">BLOCK_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BLOCK_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/ASOC">
+      <obj_property name="ElementShortName">ASOC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ASOC[31:0]</obj_property>
+   </wvobject>
+</wave_config>
