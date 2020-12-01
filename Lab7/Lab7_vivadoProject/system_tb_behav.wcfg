@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="system_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="system_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1734800fs"></ZoomStartTime>
+      <ZoomEndTime time="2611122fs"></ZoomEndTime>
+      <Cursor1Time time="1951000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="146"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject type="logic" fp_name="/system_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/uut/acel_reader/resetn">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/uut/acel_reader/CS">
+      <obj_property name="ElementShortName">CS</obj_property>
+      <obj_property name="ObjectShortName">CS</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/SCLK">
+      <obj_property name="ElementShortName">SCLK</obj_property>
+      <obj_property name="ObjectShortName">SCLK</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/MISO">
+      <obj_property name="ElementShortName">MISO</obj_property>
+      <obj_property name="ObjectShortName">MISO</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/MOSI">
+      <obj_property name="ElementShortName">MOSI</obj_property>
+      <obj_property name="ObjectShortName">MOSI</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/acel_reader/STATE">
+      <obj_property name="ElementShortName">STATE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/acel_reader/NEXT_STATE">
+      <obj_property name="ElementShortName">NEXT_STATE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">NEXT_STATE[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/acel_reader/selector">
+      <obj_property name="ElementShortName">selector[2:0]</obj_property>
+      <obj_property name="ObjectShortName">selector[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/acel_reader/counter">
+      <obj_property name="ElementShortName">counter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/FIFO">
+      <obj_property name="ElementShortName">FIFO[15:0]</obj_property>
+      <obj_property name="ObjectShortName">FIFO[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/acel_reader/FIFO">
+      <obj_property name="ElementShortName">FIFO[15:0]</obj_property>
+      <obj_property name="ObjectShortName">FIFO[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/acel_reader/X_accel_reg">
+      <obj_property name="ElementShortName">X_accel_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">X_accel_reg[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/acel_reader/Y_accel_reg">
+      <obj_property name="ElementShortName">Y_accel_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Y_accel_reg[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/system_tb/uut/acel_reader/send_data_ready">
+      <obj_property name="ElementShortName">send_data_ready</obj_property>
+      <obj_property name="ObjectShortName">send_data_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/acel_reader/y_accel">
+      <obj_property name="ElementShortName">y_accel[7:0]</obj_property>
+      <obj_property name="ObjectShortName">y_accel[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/system_tb/uut/acel_reader/x_accel">
+      <obj_property name="ElementShortName">x_accel[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x_accel[7:0]</obj_property>
+   </wvobject>
+</wave_config>
