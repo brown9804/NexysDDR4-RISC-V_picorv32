@@ -2,8 +2,8 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Wed Dec  9 03:07:15 2020
-# Process ID: 5568
+# Start of session at: Wed Dec  9 23:33:32 2020
+# Process ID: 23526
 # Current directory: /home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/Lab8_vivadoProject/Lab8_vivadoProject.runs/synth_1
 # Command line: vivado -log system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
 # Log file: /home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/Lab8_vivadoProject/Lab8_vivadoProject.runs/synth_1/system.vds
@@ -17,16 +17,14 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 5619
-WARNING: [Synth 8-992] wanode is already implicitly declared earlier [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:140]
-WARNING: [Synth 8-992] wled is already implicitly declared earlier [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:141]
+INFO: [Synth 8-7075] Helper process launched with PID 23602
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2112.504 ; gain = 0.000 ; free physical = 1021 ; free virtual = 4340
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2116.469 ; gain = 0.000 ; free physical = 803 ; free virtual = 4398
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'system' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:3]
+INFO: [Synth 8-6157] synthesizing module 'system' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:10]
 	Parameter FAST_MEMORY bound to: 1 - type: integer 
 	Parameter MEM_SIZE bound to: 4096 - type: integer 
-INFO: [Synth 8-3876] $readmem data file '../firmware/firmware.hex' is read successfully [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:80]
+INFO: [Synth 8-3876] $readmem data file '../firmware/firmware.hex' is read successfully [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:93]
 INFO: [Synth 8-6157] synthesizing module 'picorv32' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/picorv32/picorv32.v:57]
 	Parameter ENABLE_COUNTERS bound to: 1'b1 
 	Parameter ENABLE_COUNTERS64 bound to: 1'b1 
@@ -83,20 +81,20 @@ WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/bran/Documentos/Lab 
 WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/picorv32/picorv32.v:1563]
 WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/picorv32/picorv32.v:1563]
 INFO: [Synth 8-6155] done synthesizing module 'picorv32' (1#1) [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/picorv32/picorv32.v:57]
-WARNING: [Synth 8-7071] port 'pcpi_valid' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:32]
-WARNING: [Synth 8-7071] port 'pcpi_insn' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:32]
-WARNING: [Synth 8-7071] port 'pcpi_rs1' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:32]
-WARNING: [Synth 8-7071] port 'pcpi_rs2' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:32]
-WARNING: [Synth 8-7071] port 'pcpi_wr' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:32]
-WARNING: [Synth 8-7071] port 'pcpi_rd' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:32]
-WARNING: [Synth 8-7071] port 'pcpi_wait' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:32]
-WARNING: [Synth 8-7071] port 'pcpi_ready' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:32]
-WARNING: [Synth 8-7071] port 'irq' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:32]
-WARNING: [Synth 8-7071] port 'eoi' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:32]
-WARNING: [Synth 8-7071] port 'trace_valid' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:32]
-WARNING: [Synth 8-7071] port 'trace_data' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:32]
-WARNING: [Synth 8-7023] instance 'picorv32_core' of module 'picorv32' has 27 connections declared, but only 15 given [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:32]
-INFO: [Synth 8-6157] synthesizing module 'text_display' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/text_display.v:12]
+WARNING: [Synth 8-7071] port 'pcpi_valid' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'pcpi_insn' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'pcpi_rs1' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'pcpi_rs2' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'pcpi_wr' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'pcpi_rd' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'pcpi_wait' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'pcpi_ready' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'irq' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'eoi' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'trace_valid' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'trace_data' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7023] instance 'picorv32_core' of module 'picorv32' has 27 connections declared, but only 15 given [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+INFO: [Synth 8-6157] synthesizing module 'text_display' [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/text_display.v:14]
 	Parameter TEXT_SIZE bound to: 4 - type: integer 
 	Parameter LEDSEGMENTS bound to: 7 - type: integer 
 	Parameter Start bound to: 4'b0000 
@@ -137,21 +135,21 @@ INFO: [Synth 8-6157] synthesizing module 'x7_segment_hex' [/home/bran/Documentos
 	Parameter Z bound to: 8'b11100100 
 INFO: [Synth 8-226] default block is never used [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:59]
 INFO: [Synth 8-6155] done synthesizing module 'x7_segment_hex' (2#1) [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'text_display' (3#1) [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/text_display.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'system' (4#1) [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'text_display' (3#1) [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/text_display.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'system' (4#1) [/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/src/verilog/system.v:10]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2112.504 ; gain = 0.000 ; free physical = 1046 ; free virtual = 4368
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 2116.469 ; gain = 0.000 ; free physical = 828 ; free virtual = 4425
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2112.504 ; gain = 0.000 ; free physical = 1045 ; free virtual = 4367
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2116.469 ; gain = 0.000 ; free physical = 826 ; free virtual = 4423
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2112.504 ; gain = 0.000 ; free physical = 1045 ; free virtual = 4367
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2116.469 ; gain = 0.000 ; free physical = 826 ; free virtual = 4423
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2112.504 ; gain = 0.000 ; free physical = 1037 ; free virtual = 4359
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2116.469 ; gain = 0.000 ; free physical = 818 ; free virtual = 4415
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -162,29 +160,29 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2211.148 ; gain = 0.000 ; free physical = 933 ; free virtual = 4266
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2212.113 ; gain = 0.000 ; free physical = 714 ; free virtual = 4322
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2211.148 ; gain = 0.000 ; free physical = 933 ; free virtual = 4266
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2212.113 ; gain = 0.000 ; free physical = 714 ; free virtual = 4322
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 2211.148 ; gain = 98.645 ; free physical = 1009 ; free virtual = 4342
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2212.113 ; gain = 95.645 ; free physical = 790 ; free virtual = 4398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 2211.148 ; gain = 98.645 ; free physical = 1009 ; free virtual = 4342
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2212.113 ; gain = 95.645 ; free physical = 790 ; free virtual = 4398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 2211.148 ; gain = 98.645 ; free physical = 1009 ; free virtual = 4342
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2212.113 ; gain = 95.645 ; free physical = 790 ; free virtual = 4398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 2211.148 ; gain = 98.645 ; free physical = 1002 ; free virtual = 4335
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 2212.113 ; gain = 95.645 ; free physical = 781 ; free virtual = 4390
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -255,7 +253,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 2211.148 ; gain = 98.645 ; free physical = 973 ; free virtual = 4311
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 2212.113 ; gain = 95.645 ; free physical = 751 ; free virtual = 4367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -293,13 +291,13 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 2211.148 ; gain = 98.645 ; free physical = 846 ; free virtual = 4191
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:57 . Memory (MB): peak = 2212.113 ; gain = 95.645 ; free physical = 625 ; free virtual = 4248
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 2227.156 ; gain = 114.652 ; free physical = 818 ; free virtual = 4163
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:03 . Memory (MB): peak = 2228.121 ; gain = 111.652 ; free physical = 595 ; free virtual = 4218
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -331,7 +329,7 @@ INFO: [Synth 8-7052] The timing for the instance memory_reg_1 (implemented as a 
 INFO: [Synth 8-7052] The timing for the instance memory_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance memory_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 2243.172 ; gain = 130.668 ; free physical = 815 ; free virtual = 4161
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:01:05 . Memory (MB): peak = 2244.137 ; gain = 127.668 ; free physical = 593 ; free virtual = 4216
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -349,37 +347,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 2243.172 ; gain = 130.668 ; free physical = 815 ; free virtual = 4160
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:10 . Memory (MB): peak = 2244.137 ; gain = 127.668 ; free physical = 592 ; free virtual = 4215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 2243.172 ; gain = 130.668 ; free physical = 815 ; free virtual = 4160
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:10 . Memory (MB): peak = 2244.137 ; gain = 127.668 ; free physical = 592 ; free virtual = 4215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 2243.172 ; gain = 130.668 ; free physical = 815 ; free virtual = 4160
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:10 . Memory (MB): peak = 2244.137 ; gain = 127.668 ; free physical = 592 ; free virtual = 4215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 2243.172 ; gain = 130.668 ; free physical = 815 ; free virtual = 4160
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:10 . Memory (MB): peak = 2244.137 ; gain = 127.668 ; free physical = 592 ; free virtual = 4215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 2243.172 ; gain = 130.668 ; free physical = 815 ; free virtual = 4160
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:10 . Memory (MB): peak = 2244.137 ; gain = 127.668 ; free physical = 592 ; free virtual = 4215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 2243.172 ; gain = 130.668 ; free physical = 815 ; free virtual = 4160
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:10 . Memory (MB): peak = 2244.137 ; gain = 127.668 ; free physical = 592 ; free virtual = 4215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -413,27 +411,27 @@ Report Cell Usage:
 |19    |OBUF     |    26|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 2243.172 ; gain = 130.668 ; free physical = 815 ; free virtual = 4160
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:10 . Memory (MB): peak = 2244.137 ; gain = 127.668 ; free physical = 592 ; free virtual = 4215
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 2243.172 ; gain = 32.023 ; free physical = 868 ; free virtual = 4213
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 2243.180 ; gain = 130.668 ; free physical = 868 ; free virtual = 4213
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:05 . Memory (MB): peak = 2244.137 ; gain = 32.023 ; free physical = 645 ; free virtual = 4268
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 2244.145 ; gain = 127.668 ; free physical = 645 ; free virtual = 4268
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2243.180 ; gain = 0.000 ; free physical = 941 ; free virtual = 4287
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2244.145 ; gain = 0.000 ; free physical = 719 ; free virtual = 4342
 INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'system' is not ideal for floorplanning, since the cellview 'picorv32' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2243.180 ; gain = 0.000 ; free physical = 887 ; free virtual = 4233
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2244.145 ; gain = 0.000 ; free physical = 665 ; free virtual = 4288
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 12 instances were transformed.
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-31 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+31 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:05 . Memory (MB): peak = 2243.180 ; gain = 130.828 ; free physical = 1049 ; free virtual = 4394
+synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:35 . Memory (MB): peak = 2244.145 ; gain = 127.828 ; free physical = 825 ; free virtual = 4449
 INFO: [Common 17-1381] The checkpoint '/home/bran/Documentos/Lab digitales/laboratorio-8-b-b-corp/Lab8_vivadoProject/Lab8_vivadoProject.runs/synth_1/system.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec  9 03:08:37 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  9 23:35:33 2020...

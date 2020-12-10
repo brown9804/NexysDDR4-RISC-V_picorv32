@@ -9,6 +9,8 @@
 `define TEXT_DISPLAY
 
 
+
+
 module text_display #(
 parameter TEXT_SIZE = 4,
 parameter LEDSEGMENTS = 7) (
@@ -26,7 +28,7 @@ wire [7:0] cdt; // catode_display_number_going_to_be_traduced
 wire [7:0] adt; // anode_display_number_going_to_be_traduced
 reg [63:0] mem; // complete command
 
-///  7 SEGMENTS  DISPLAY 
+///  7 SEGMENTS  DISPLAY
 x7_segment_hex x7_segment_hex_inst(
 .displayed_number   (mem),
 .clk         (clk),
@@ -69,7 +71,7 @@ end // end reset 0
 else begin // LOGIC HAPPENING 
     case(select)
      // [31:0] displayed_number
-     // SHARED CATODES 
+     // SHARED CATODES
      // ALWAYS 1  and for ANODE put high for each letter 
      // 64 = 8x8 bits is displayed number -> 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
      // START - ANODE = 1110 0000

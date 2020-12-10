@@ -58,20 +58,22 @@ module system (
 	
 // ------------------------------------------
 // ////// -> BEGIN LAB8
+wire [7:0] wanode;
+wire [7:0] wled;
 // //////// begin part1
-// text_display text_display_inst(
-// // INPUTS 
-// .clk (clk),
-// .resetn (resetn),
-// .select (out_byte[3:0]), // 4 bits // selector 
-// .enable (out_byte_en), // 1 bit 
-// // OUTPUTS
-// .catode ( wled  ), // 7 segments 
-// .anode (  wanode )
-// );
+ text_display text_display_inst(
+// INPUTS 
+.clk (clk),
+ .resetn (resetn),
+.select (out_byte[3:0]), // 4 bits // selector 
+ .enable (out_byte_en), // 1 bit 
+ // OUTPUTS
+ .catode ( wled  ), // 7 segments 
+.anode (  wanode )
+ );
 
 ///////// begin part2
-
+/*
 prs_game  prs_game_inst(
 // INPUTS 
 .clk (clk),
@@ -82,7 +84,8 @@ prs_game  prs_game_inst(
 .catode ( wled  ), // 7 segments 
 .anode (  wanode )
 );
-////// -> END LAB8
+
+////// -> END LAB8*/
 // ------------------------------------------
 reg [31:0] memory [0:MEM_SIZE-1];
 
@@ -145,10 +148,6 @@ generate if (FAST_MEMORY) begin
 	end 
 endgenerate
 
-
-//// Exe 1 wires ///
-wire [7:0] wanode;
-wire [7:0] wled;
 
 /////// Logic /////////////////////
 	always @(posedge clk) begin

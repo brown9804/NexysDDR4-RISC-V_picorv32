@@ -34,7 +34,7 @@ parameter LEDSEGMENTS = 7) (
 // 8        Tie         // 1000
 
 localparam Start    = 4'b0000; // # letter 5
-localparam Select   = 4'b0001; // # letter 6  
+localparam Select   = 4'b0001; // # letter 6
 localparam Paper    = 4'b0010; // # letter 5
 localparam Scissors = 4'b0011; // # letter 7
 localparam Rock     = 4'b0100; // # letter 4
@@ -80,86 +80,114 @@ x7_segment_hex x7_segment_hex_inst(
 // -----------------------------------------------------------------------------------------------
 // PS2
 // -----------------------------------------------------------------------------------------------
-wire [31:0]keycode;
-reg CLK50MHZ=0;    
-wire [31:0]keycode;
+reg CLK50MHZ=0;
+wire [7:0] selector;
+reg [7:0] userchoice;
+reg [7:0] rivaloption;
+reg [3:0] comparation;
 /// CLK for ps2
 always @(posedge(clk))begin
-    CLK50MHZ<=~CLK50MHZ;
+    CLK50MHZ <= ~CLK50MHZ;
 end
 // ---- module
-PS2Receiver keyboard (
-.clk (CLK50MHZ),
-.kclk (PS2_CLK),
-.kdata (PS2_DATA),
-.keycodeout (keycode[31:0])
+PS2_Controller Mouse (
+.CLOCK_50    (CLK50MHZ),
+.PS2_CLK     (PS2_CLK),
+.PS2_DAT     (PS2_DATA),
+.received_data (selector[7:0])
 );
-// -----------------------------------------------------------------------------------------------
-// LOGIC --- STAGE
-// -----------------------------------------------------------------------------------------------
-always @(posedge clk) begin // Each positive edge of the clock make these changes
-    //If this happens on a positive edge of the clock, make the following changes for the next clock edge
-    if (resetn == 0) begin // Reset synchronous // If resetn in LOW nonblobking assing zero
-    // catode <= 8'b00000000;
-    // anode  <= 8'b00000000;
-    end // end resetn 0 
-    else begin // LOGIC HAPPENING 
-//---------------------------------
-// START: 
+
+
+localparam READ_BYTE1 = 3'b001;
+localparam READ_BYTE2 = 3'b010;
+localparam READ_BYTE3 = 3'b100;
+
+reg right_click;
+reg [2:0] state;
+reg wheel;
+reg [7:0] X_axis;
+reg [7:0] Y_axis;
+reg next_rival, next_compare;
+reg userOption, next_start, next_select_print,next_choice;
+
+
+     
+ always@(posedge clk) begin
+        if (resetn) begin
+            right_click <=0;
+            state       <=0;
+            wheel       <=0;
+            X_axis      <=0;
+            Y_axis      <=0;
+            next_rival  <=0;
+            next_compare<=0;
+            next_start  <=1;
+            next_choice <=0;
+        end else begin
+        // START: 
 // -> Display START message 
 // anode <= 8'b11100000;
+
+     if(next_start) begin
         mem <= 64'b1111111111111111111111111101001010000111100010001010111110000111; // 0.0.0.S.T.A.R.T
-//---------------------------------
-// INSERTING DELAY:
-// remembering `timescale 1 ns / 1 ps
-// mm um nm pm 
-        assign #(35000000) clk = ~clk;
-//---------------------------------
-// SELECT
-// -> Display SELECT message 
+        next_select_print   <= 1;
+        next_start          <= 0;
+      end else begin
+ // SELECT
+//-> Display SELECT message 
    // anode <= 8'b10000000;
+     if(next_select_print) begin
+        #(35000);
+        next_choice <= 1;
         mem <= 64'b1111111111111111110100101000011011000111100001101010011110000111; // 0.0.S.E.L.E.C.T
-//---------------------------------
-// WAITING FOR SCROLL WHEEL AND RIGHT CLICK  
-// OBTAIN USER CHOICE 
-// This one is already instantiated
-// So user choice is 4 bits 
-// < 
-//      HOW?
-// > 
-//---------------------------------
-// USER OPTIONS DISPLAY
-// • Paper
-// • Rock
-// • Scissors
+        next_select_print  <=0;
+      end else begin
+      
+          case (state)    
+            READ_BYTE1: begin
+                    right_click  <= selector[1];
+                    wheel       <= selector[3];
+                    state <= READ_BYTE2;
+                end
+            READ_BYTE2: begin
+                X_axis <= selector; 
+                state <= READ_BYTE3;
+                end
+            READ_BYTE3: begin
+                Y_axis <= selector;
+                state <= READ_BYTE1;
+                end
+             endcase
+             
+          if(next_choice) begin
+// USER OPTIONS DISPLAY // • Paper // • Rock  // • Scissors
         case(userchoice)
-        Paper: begin 
-            // anode <= 8'b11100000;
+            Paper: begin
                 mem <= 64'b1111111111111111111111111000110010001000100011001000011010101111; // 0.0.0.P.A.P.E.R
                 end // end case 2
-            Scissors: begin 
-            // anode <= 8'b00000000;
+            Scissors: begin
                 mem <= 64'b1101001010100111111011101101001011010010101000111010111111010010; // S.C.I.S.S.O.R.S
                 end // end case 3
-            Rock: begin 
-                //anode <= 8'b11110000;
+            Rock: begin
                 mem <= 64'b1111111111111111111111111111111110101111101000111010011110001010; // 0.0.0.0.0.R.O.C.K
                 end   // end case 4
-            default: begin 
+            default: begin
                 mem <= 64'b1111111111111111111111111111111111111111111111111111111111111111; // . . . . . .
-            //anode <= 8'b00000000;
-        end 
+            end
         endcase // end user choice display
+       end // end if userchoice
 //---------------------------------
-// INSERTING DELAY:
-// remembering `timescale 1 ns / 1 ps
-// mm um nm pm 
-        assign #(35000000) clk = ~clk;
-//---------------------------------
+            else begin
+             if (next_rival) begin
 // RIVAL:
-// -> Display RIVAL 
+// -> Display RIVAL
     //anode <= 8'b11100000;
         mem <= 64'b1111111111111111111111111010111111101110110101011000100011000111; // 0.0.0.R.I.V.A.L
+
+// INSERTING DELAY:
+// remembering `timescale 1 ns / 1 ps
+// mm um nm pm
+       #(35000);
 //---------------------------------
 // CHOOSE RIVAL OPTION
 // Paper    = 4'b010; - 2
@@ -168,11 +196,11 @@ always @(posedge clk) begin // Each positive edge of the clock make these change
 // $urandom_range(maxVal,minVal)
 // Randomize number between 2 and 4
 //// reference https://stackoverflow.com/questions/41166023/systemverilog-how-can-i-use-urandom-random-with-range
-        rivaloption = $urandom_range(4,2)
+        rivaloption <= $urandom_range(4,2);
 //---------------------------------
 // DISPLAY RANDOM RIVAL OPTION
         case(rivaloption)
-            Paper: begin 
+            Paper: begin
             // anode <= 8'b11100000;
                 mem <= 64'b1111111111111111111111111000110010001000100011001000011010101111; // 0.0.0.P.A.P.E.R
             end // end case 2
@@ -187,8 +215,43 @@ always @(posedge clk) begin // Each positive edge of the clock make these change
             default: begin 
                 mem <= 64'b1111111111111111111111111111111111111111111111111111111111111111; // . . . . . .
             // anode <= 8'b00000000;
-            end 
+            end
         endcase // end rival option display
+
+    end // end if rival
+    next_compare <= 1;
+            
+            end 
+            end
+        end
+    end
+end
+
+always @(selector) begin
+    if ((userchoice >= 4) || (rivaloption >= 4)) begin
+        userchoice <= 2;
+        rivaloption <= 2;
+    end
+    else begin
+        userchoice <= userchoice + 1;
+        rivaloption <= rivaloption + 1;
+    end
+
+    if (right_click) begin
+        userOption <= userchoice;
+        next_rival <= 1;
+    end
+end
+
+
+
+always@(posedge next_compare) begin
+// INSERTING DELAY:
+// remembering `timescale 1 ns / 1 ps
+// mm um nm pm
+       #(35000);
+//---------------------------------
+
 //---------------------------------
 // LOGIC FOR COMPARING  
 // POSSIBLE COMBINATIONS 
@@ -200,28 +263,28 @@ always @(posedge clk) begin // Each positive edge of the clock make these change
 // rock -    scrissors ----> WON 
 // rock -    paper ----> LOST 
 // CHOOSE RIVAL OPTION
-        if (userchoice == rivaloption) begin 
+        if (userOption == rivaloption) begin 
             comparation <= Tie;
         end 
         // USER CHOICE SCISSORS 
-        else if ((userchoice == Scissors) || (rivaloption == Paper)) begin 
+        else if ((userOption == Scissors) && (rivaloption == Paper)) begin 
             comparation <= YouWON;
         end 
-        else if ((userchoice == Scissors) || (rivaloption == Rock)) begin 
+        else if ((userOption == Scissors) && (rivaloption == Rock)) begin 
             comparation <= YouLOST;
         end 
         // USER CHOICE PAPER 
-        else if ((userchoice == Paper) || (rivaloption == Scissors)) begin 
+        else if ((userOption == Paper) && (rivaloption == Scissors)) begin 
             comparation <= YouLOST;
         end 
-        else if ((userchoice == Paper) || (rivaloption == Rock)) begin 
+        else if ((userOption == Paper) && (rivaloption == Rock)) begin 
             comparation <= YouWON;
         end 
         // USER CHOICE ROCK 
-        else if ((userchoice == Rock) || (rivaloption == Scissors)) begin 
+        else if ((userOption == Rock) && (rivaloption == Scissors)) begin 
             comparation <= YouWON;
         end 
-        else if ((userchoice == Rock) || (rivaloption == Paper)) begin 
+        else if ((userOption == Rock) && (rivaloption == Paper)) begin 
             comparation <= YouLOST;
         end 
         // DEFAULT 
@@ -246,10 +309,12 @@ always @(posedge clk) begin // Each positive edge of the clock make these change
             default: begin 
                 mem <= 64'b1111111111111111111111111111111111111111111111111111111111111111; // . . . . . .
                 //anode <= 8'b111111111;
-            end 
+            end
         endcase
-    end // end reset 
-end // end clk
+    end // end always next compare
+
+
+
 
 
 always@(*)begin

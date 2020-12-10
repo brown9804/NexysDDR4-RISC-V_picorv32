@@ -125,6 +125,8 @@ Z:    seg = 8'b11100100;
  default: seg = 8'b11111111;
 endcase
 
+
+
 ///// SEND 
 //// ANODE ACTIVATION INCORPORATED
     always @(*)begin

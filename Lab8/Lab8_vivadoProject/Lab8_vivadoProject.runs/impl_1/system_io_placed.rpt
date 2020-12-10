@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-| Date                      : Wed Dec  9 03:09:37 2020
+| Date                      : Wed Dec  9 23:36:56 2020
 | Host                      : bran-VM-ubuntu18 running 64-bit Ubuntu 18.04.5 LTS
 | Command                   : report_io -file system_io_placed.rpt
 | Design                    : system
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            28 |
+|            30 |
 +---------------+
 
 
@@ -54,7 +54,7 @@ Table of Contents
 | A17        |               | High Range | VCCO_15                      | VCCO        |             |      15 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | A18        |               | High Range | IO_L10N_T1_AD11N_15          | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | B1         |               | High Range | IO_L9P_T1_DQS_AD7P_35        | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| B2         |               | High Range | IO_L10N_T1_AD15N_35          | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| B2         | PS2Data       | High Range | IO_L10N_T1_AD15N_35          | INPUT       | LVCMOS33    |      35 |            |      |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |              |                   |              |
 | B3         |               | High Range | IO_L10P_T1_AD15P_35          | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | B4         |               | High Range | IO_L7N_T1_AD6N_35            | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | B5         |               |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
@@ -128,7 +128,7 @@ Table of Contents
 | F1         |               | High Range | IO_L18P_T2_35                | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | F2         |               | High Range | VCCO_35                      | VCCO        |             |      35 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | F3         |               | High Range | IO_L13N_T2_MRCC_35           | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| F4         |               | High Range | IO_L13P_T2_MRCC_35           | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| F4         | PS2Clk        | High Range | IO_L13P_T2_MRCC_35           | INPUT       | LVCMOS33    |      35 |            |      |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |              |                   |              |
 | F5         |               | High Range | IO_0_35                      | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | F6         |               | High Range | IO_L19N_T3_VREF_35           | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | F7         |               |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |

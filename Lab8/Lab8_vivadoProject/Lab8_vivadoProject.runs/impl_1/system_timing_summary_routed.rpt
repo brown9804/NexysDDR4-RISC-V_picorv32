@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-| Date         : Wed Dec  9 03:10:12 2020
+| Date         : Wed Dec  9 23:37:47 2020
 | Host         : bran-VM-ubuntu18 running 64-bit Ubuntu 18.04.5 LTS
 | Command      : report_timing_summary -max_paths 10 -file system_timing_summary_routed.rpt -pb system_timing_summary_routed.pb -rpx system_timing_summary_routed.rpx -warn_on_violation
 | Design       : system

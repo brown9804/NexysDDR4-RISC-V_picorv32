@@ -1,0 +1,9 @@
+0.7
+2020.1
+May 27 2020
+19:59:15
+/home/belindabrown/Desktop/laboratorio-8-b-b-corp/Lab8_Scissors-rock-paper_vivadoProject/Lab8_Scissors-rock-paper_vivadoProject.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/picorv32/picorv32.v,1607562396,verilog,,/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/prs_game.v,,picorv32;picorv32_axi;picorv32_axi_adapter;picorv32_pcpi_div;picorv32_pcpi_fast_mul;picorv32_pcpi_mul;picorv32_regs;picorv32_wb,,,,,,,,
+/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/prs_game.v,1607564048,verilog,,/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v,,prs_game,,,,,,,,
+/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v,1607562396,verilog,,/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system_tb.v,,system,,,,,,,,
+/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system_tb.v,1607562396,verilog,,,,system_tb,,,,,,,,

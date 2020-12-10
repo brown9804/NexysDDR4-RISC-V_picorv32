@@ -1,9 +1,9 @@
-// Belinda Brown Ramírez
-// Brandon Esquivel Molina
-// December, 2020
-// timna.brown@ucr.ac.cr
-// brandon.esquivel@ucr.ac.cr
-//github: @brown9804, @brandonEsquivel
+#// Belinda Brown Ramírez
+#// Brandon Esquivel Molina
+#// December, 2020
+#// timna.brown@ucr.ac.cr
+#// brandon.esquivel@ucr.ac.cr
+#//github: @brown9804, @brandonEsquivel
 
 set_property CFGBVS VCCO [current_design]
 set_property CONFIG_VOLTAGE 3.3 [current_design]
@@ -51,30 +51,19 @@ set_property -dict { PACKAGE_PIN T11 IOSTANDARD LVCMOS33 } [get_ports { Led_outp
 set_property -dict { PACKAGE_PIN L18 IOSTANDARD LVCMOS33 } [get_ports { Led_output[6] }];       # CG
 set_property -dict { PACKAGE_PIN H15 IOSTANDARD LVCMOS33 } [get_ports { Led_output[7] }];       # DP
 
+##USB HID (PS/2)
+
+set_property -dict { PACKAGE_PIN F4  IOSTANDARD LVCMOS33 PULLUP true} [get_ports { PS2Clk }]; #IO_L13P_T2_MRCC_35 Sch=PS2Clk
+set_property -dict { PACKAGE_PIN B2  IOSTANDARD LVCMOS33 PULLUP true} [get_ports { PS2Data }]; #IO_L10N_T1_AD15N_35 Sch=PS2Data
+
 set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
 set_property BITSTREAM.CONFIG.CONFIGRATE 33 [current_design]
 set_property CONFIG_MODE SPIx4 [current_design]
 
 
 
-##USB HID (PS/2)
-## Considering that this ports are:
-##Bank = 35, Pin name = IO_L13P_T2_MRCC_35,					Sch name = PS2_CLK
-##Bank = 35, Pin name = IO_L10N_T1_AD15N_35,			    Sch name = PS2_DATA
-##NET "ps2_clk"        LOC=F4 | IOSTANDARD=LVCMOS33; #IO_L13P_T2_MRCC_35
-##NET "ps2_data"       LOC=B2 | IOSTANDARD=LVCMOS33; #IO_L10N_T1_AD15N_35
-## There is two options:
-## Option 1:
-##set_property -dict { PACKAGE_PIN F4 IOSTANDARD LVCMOS33 } [get_ports { PS2Clk[6] }];     # PS2Clk
-##set_property -dict { PACKAGE_PIN B2 IOSTANDARD LVCMOS33 } [get_ports { PS2Data[7] }];    # PS2Data
-## Option 2:
-### ---- CLK 
-set_property PACKAGE_PIN F4 [get_ports PS2Clk]	 
-set_property IOSTANDARD LVCMOS33 [get_ports PS2Clk]
-set_property PULLUP true [get_ports PS2Clk]
-### ---- PS2_DATA
-set_property PACKAGE_PIN B2 [get_ports PS2Data]					
-set_property IOSTANDARD LVCMOS33 [get_ports PS2Data]	
-set_property PULLUP true [get_ports PS2Data]
+
+
+
 
 

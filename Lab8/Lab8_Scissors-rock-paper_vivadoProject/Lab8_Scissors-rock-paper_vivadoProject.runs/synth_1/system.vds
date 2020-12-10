@@ -1,0 +1,556 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Dec  9 20:01:16 2020
+# Process ID: 13669
+# Current directory: /home/belindabrown/Desktop/laboratorio-8-b-b-corp/Lab8_Scissors-rock-paper_vivadoProject/Lab8_Scissors-rock-paper_vivadoProject.runs/synth_1
+# Command line: vivado -log system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+# Log file: /home/belindabrown/Desktop/laboratorio-8-b-b-corp/Lab8_Scissors-rock-paper_vivadoProject/Lab8_Scissors-rock-paper_vivadoProject.runs/synth_1/system.vds
+# Journal file: /home/belindabrown/Desktop/laboratorio-8-b-b-corp/Lab8_Scissors-rock-paper_vivadoProject/Lab8_Scissors-rock-paper_vivadoProject.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/home/belindabrown/.Xilinx/Vivado/Vivado_init.tcl'
+source system.tcl -notrace
+WARNING: [Board 49-91] Board repository path '/home/belindabrown/Documents/vivado-boards/new/board_files' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path '/home/belindabrown/Documents/vivado-boards/new/board_files' does not exist, it will not be used to search board files.
+Command: synth_design -top system -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13723
+WARNING: [Synth 8-6901] identifier 'init_done' is used before its declaration [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/PS2_Controller.v:60]
+WARNING: [Synth 8-6901] identifier 'init_done' is used before its declaration [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/PS2_Controller.v:61]
+WARNING: [Synth 8-6901] identifier 'init_done' is used before its declaration [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/PS2_Controller.v:62]
+WARNING: [Synth 8-6901] identifier 'init_done' is used before its declaration [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/PS2_Controller.v:63]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 2039.195 ; gain = 0.000 ; free physical = 691 ; free virtual = 949
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v:10]
+	Parameter FAST_MEMORY bound to: 1 - type: integer 
+	Parameter MEM_SIZE bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file '../firmware/firmware.hex' is read successfully [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v:93]
+INFO: [Synth 8-6157] synthesizing module 'picorv32' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/picorv32/picorv32.v:57]
+	Parameter ENABLE_COUNTERS bound to: 1'b1 
+	Parameter ENABLE_COUNTERS64 bound to: 1'b1 
+	Parameter ENABLE_REGS_16_31 bound to: 1'b1 
+	Parameter ENABLE_REGS_DUALPORT bound to: 1'b1 
+	Parameter LATCHED_MEM_RDATA bound to: 1'b0 
+	Parameter TWO_STAGE_SHIFT bound to: 1'b1 
+	Parameter BARREL_SHIFTER bound to: 1'b0 
+	Parameter TWO_CYCLE_COMPARE bound to: 1'b0 
+	Parameter TWO_CYCLE_ALU bound to: 1'b0 
+	Parameter COMPRESSED_ISA bound to: 1'b0 
+	Parameter CATCH_MISALIGN bound to: 1'b1 
+	Parameter CATCH_ILLINSN bound to: 1'b1 
+	Parameter ENABLE_PCPI bound to: 1'b0 
+	Parameter ENABLE_MUL bound to: 1'b0 
+	Parameter ENABLE_FAST_MUL bound to: 1'b0 
+	Parameter ENABLE_DIV bound to: 1'b0 
+	Parameter ENABLE_IRQ bound to: 1'b0 
+	Parameter ENABLE_IRQ_QREGS bound to: 1'b1 
+	Parameter ENABLE_IRQ_TIMER bound to: 1'b1 
+	Parameter ENABLE_TRACE bound to: 1'b0 
+	Parameter REGS_INIT_ZERO bound to: 1'b0 
+	Parameter MASKED_IRQ bound to: 0 - type: integer 
+	Parameter LATCHED_IRQ bound to: -1 - type: integer 
+	Parameter PROGADDR_RESET bound to: 0 - type: integer 
+	Parameter PROGADDR_IRQ bound to: 16 - type: integer 
+	Parameter STACKADDR bound to: -1 - type: integer 
+	Parameter irq_timer bound to: 0 - type: integer 
+	Parameter irq_ebreak bound to: 1 - type: integer 
+	Parameter irq_buserror bound to: 2 - type: integer 
+	Parameter irqregs_offset bound to: 32 - type: integer 
+	Parameter regfile_size bound to: 32 - type: integer 
+	Parameter regindex_bits bound to: 5 - type: integer 
+	Parameter WITH_PCPI bound to: 1'b0 
+	Parameter TRACE_BRANCH bound to: 36'b000100000000000000000000000000000000 
+	Parameter TRACE_ADDR bound to: 36'b001000000000000000000000000000000000 
+	Parameter TRACE_IRQ bound to: 36'b100000000000000000000000000000000000 
+	Parameter cpu_state_trap bound to: 8'b10000000 
+	Parameter cpu_state_fetch bound to: 8'b01000000 
+	Parameter cpu_state_ld_rs1 bound to: 8'b00100000 
+	Parameter cpu_state_ld_rs2 bound to: 8'b00010000 
+	Parameter cpu_state_exec bound to: 8'b00001000 
+	Parameter cpu_state_shift bound to: 8'b00000100 
+	Parameter cpu_state_stmem bound to: 8'b00000010 
+	Parameter cpu_state_ldmem bound to: 8'b00000001 
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/picorv32/picorv32.v:1248]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/picorv32/picorv32.v:1294]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/picorv32/picorv32.v:1294]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/picorv32/picorv32.v:1477]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/picorv32/picorv32.v:1477]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/picorv32/picorv32.v:1563]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/picorv32/picorv32.v:1563]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/picorv32/picorv32.v:1563]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/picorv32/picorv32.v:1563]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/picorv32/picorv32.v:1563]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32' (1#1) [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/picorv32/picorv32.v:57]
+WARNING: [Synth 8-7071] port 'pcpi_valid' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'pcpi_insn' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'pcpi_rs1' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'pcpi_rs2' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'pcpi_wr' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'pcpi_rd' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'pcpi_wait' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'pcpi_ready' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'irq' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'eoi' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'trace_valid' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7071] port 'trace_data' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+WARNING: [Synth 8-7023] instance 'picorv32_core' of module 'picorv32' has 27 connections declared, but only 15 given [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v:41]
+INFO: [Synth 8-6157] synthesizing module 'prs_game' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/prs_game.v:12]
+	Parameter LEDSEGMENTS bound to: 7 - type: integer 
+	Parameter Start bound to: 4'b0000 
+	Parameter Select bound to: 4'b0001 
+	Parameter Paper bound to: 4'b0010 
+	Parameter Scissors bound to: 4'b0011 
+	Parameter Rock bound to: 4'b0100 
+	Parameter Rival bound to: 4'b0101 
+	Parameter YouWON bound to: 4'b0110 
+	Parameter YouLOST bound to: 4'b0111 
+	Parameter Tie bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'x7_segment_hex' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:9]
+	Parameter A bound to: 8'b10001000 
+	Parameter B bound to: 8'b10000011 
+	Parameter C bound to: 8'b10100111 
+	Parameter D bound to: 8'b10100001 
+	Parameter E bound to: 8'b10000110 
+	Parameter F bound to: 8'b10001110 
+	Parameter G bound to: 8'b11000010 
+	Parameter H bound to: 8'b10001011 
+	Parameter I bound to: 8'b11101110 
+	Parameter J bound to: 8'b11110010 
+	Parameter K bound to: 8'b10001010 
+	Parameter L bound to: 8'b11000111 
+	Parameter M bound to: 8'b10101010 
+	Parameter N bound to: 8'b10101011 
+	Parameter O bound to: 8'b10100011 
+	Parameter P bound to: 8'b10001100 
+	Parameter Q bound to: 8'b10011000 
+	Parameter R bound to: 8'b10101111 
+	Parameter S bound to: 8'b11010010 
+	Parameter T bound to: 8'b10000111 
+	Parameter U bound to: 8'b11100011 
+	Parameter V bound to: 8'b11010101 
+	Parameter W bound to: 8'b10010101 
+	Parameter X bound to: 8'b11101011 
+	Parameter Y bound to: 8'b10010001 
+	Parameter Z bound to: 8'b11100100 
+INFO: [Synth 8-226] default block is never used [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'x7_segment_hex' (2#1) [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:9]
+INFO: [Synth 8-6157] synthesizing module 'PS2_Controller' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/PS2_Controller.v:9]
+	Parameter INITIALIZE_MOUSE bound to: 0 - type: integer 
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_DATA_IN bound to: 3'b001 
+	Parameter PS2_STATE_2_COMMAND_OUT bound to: 3'b010 
+	Parameter PS2_STATE_3_END_TRANSFER bound to: 3'b011 
+	Parameter PS2_STATE_4_END_DELAYED bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'Altera_UP_PS2_Data_In' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/Altera_UP_PS2_Data_In.v:10]
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_WAIT_FOR_DATA bound to: 3'b001 
+	Parameter PS2_STATE_2_DATA_IN bound to: 3'b010 
+	Parameter PS2_STATE_3_PARITY_IN bound to: 3'b011 
+	Parameter PS2_STATE_4_STOP_IN bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'Altera_UP_PS2_Data_In' (3#1) [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/Altera_UP_PS2_Data_In.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Altera_UP_PS2_Command_Out' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/Altera_UP_PS2_Command_Out.v:10]
+	Parameter CLOCK_CYCLES_FOR_101US bound to: 5050 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_101US bound to: 13 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_101US bound to: 13'b0000000000001 
+	Parameter CLOCK_CYCLES_FOR_15MS bound to: 750000 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_15MS bound to: 20 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_15MS bound to: 20'b00000000000000000001 
+	Parameter CLOCK_CYCLES_FOR_2MS bound to: 100000 - type: integer 
+	Parameter NUMBER_OF_BITS_FOR_2MS bound to: 17 - type: integer 
+	Parameter COUNTER_INCREMENT_FOR_2MS bound to: 17'b00000000000000001 
+	Parameter PS2_STATE_0_IDLE bound to: 3'b000 
+	Parameter PS2_STATE_1_INITIATE_COMMUNICATION bound to: 3'b001 
+	Parameter PS2_STATE_2_WAIT_FOR_CLOCK bound to: 3'b010 
+	Parameter PS2_STATE_3_TRANSMIT_DATA bound to: 3'b011 
+	Parameter PS2_STATE_4_TRANSMIT_STOP_BIT bound to: 3'b100 
+	Parameter PS2_STATE_5_RECEIVE_ACK_BIT bound to: 3'b101 
+	Parameter PS2_STATE_6_COMMAND_WAS_SENT bound to: 3'b110 
+	Parameter PS2_STATE_7_TRANSMISSION_ERROR bound to: 3'b111 
+INFO: [Synth 8-226] default block is never used [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/Altera_UP_PS2_Command_Out.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'Altera_UP_PS2_Command_Out' (4#1) [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/Altera_UP_PS2_Command_Out.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'PS2_Controller' (5#1) [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/PS2_Controller.v:9]
+WARNING: [Synth 8-7071] port 'reset' of module 'PS2_Controller' is unconnected for instance 'Mouse' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/prs_game.v:93]
+WARNING: [Synth 8-7071] port 'the_command' of module 'PS2_Controller' is unconnected for instance 'Mouse' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/prs_game.v:93]
+WARNING: [Synth 8-7071] port 'send_command' of module 'PS2_Controller' is unconnected for instance 'Mouse' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/prs_game.v:93]
+WARNING: [Synth 8-7071] port 'command_was_sent' of module 'PS2_Controller' is unconnected for instance 'Mouse' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/prs_game.v:93]
+WARNING: [Synth 8-7071] port 'error_communication_timed_out' of module 'PS2_Controller' is unconnected for instance 'Mouse' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/prs_game.v:93]
+WARNING: [Synth 8-7071] port 'received_data_en' of module 'PS2_Controller' is unconnected for instance 'Mouse' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/prs_game.v:93]
+WARNING: [Synth 8-7023] instance 'Mouse' of module 'PS2_Controller' has 10 connections declared, but only 4 given [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/prs_game.v:93]
+WARNING: [Synth 8-567] referenced signal 'userchoice' should be on the sensitivity list [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/prs_game.v:100]
+WARNING: [Synth 8-567] referenced signal 'rivaloption' should be on the sensitivity list [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/prs_game.v:100]
+WARNING: [Synth 8-639] system function call 'urandom_range' not supported [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/prs_game.v:186]
+INFO: [Synth 8-6155] done synthesizing module 'prs_game' (6#1) [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/prs_game.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'system' (7#1) [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/system.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 2039.195 ; gain = 0.000 ; free physical = 795 ; free virtual = 1114
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 2039.195 ; gain = 0.000 ; free physical = 791 ; free virtual = 1114
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 2039.195 ; gain = 0.000 ; free physical = 791 ; free virtual = 1114
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2039.195 ; gain = 0.000 ; free physical = 776 ; free virtual = 1105
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/constraints/system.xdc]
+Finished Parsing XDC File [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/constraints/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/constraints/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2142.891 ; gain = 0.000 ; free physical = 542 ; free virtual = 922
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2142.891 ; gain = 0.000 ; free physical = 541 ; free virtual = 922
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:39 . Memory (MB): peak = 2142.891 ; gain = 103.695 ; free physical = 608 ; free virtual = 1001
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:39 . Memory (MB): peak = 2142.891 ; gain = 103.695 ; free physical = 608 ; free virtual = 1001
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:39 . Memory (MB): peak = 2142.891 ; gain = 103.695 ; free physical = 608 ; free virtual = 1001
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 's_ps2_receiver_reg' in module 'Altera_UP_PS2_Data_In'
+INFO: [Synth 8-802] inferred FSM for state register 's_ps2_transmitter_reg' in module 'Altera_UP_PS2_Command_Out'
+INFO: [Synth 8-802] inferred FSM for state register 's_ps2_transceiver_reg' in module 'PS2_Controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        PS2_STATE_0_IDLE |                            00001 |                              000
+PS2_STATE_1_WAIT_FOR_DATA |                            00010 |                              001
+     PS2_STATE_2_DATA_IN |                            00100 |                              010
+   PS2_STATE_3_PARITY_IN |                            01000 |                              011
+     PS2_STATE_4_STOP_IN |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_ps2_receiver_reg' using encoding 'one-hot' in module 'Altera_UP_PS2_Data_In'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        PS2_STATE_0_IDLE |                         00000010 |                              000
+PS2_STATE_1_INITIATE_COMMUNICATION |                         10000000 |                              001
+PS2_STATE_2_WAIT_FOR_CLOCK |                         01000000 |                              010
+PS2_STATE_3_TRANSMIT_DATA |                         00100000 |                              011
+PS2_STATE_4_TRANSMIT_STOP_BIT |                         00010000 |                              100
+PS2_STATE_5_RECEIVE_ACK_BIT |                         00001000 |                              101
+PS2_STATE_6_COMMAND_WAS_SENT |                         00000100 |                              110
+PS2_STATE_7_TRANSMISSION_ERROR |                         00000001 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_ps2_transmitter_reg' using encoding 'one-hot' in module 'Altera_UP_PS2_Command_Out'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        PS2_STATE_0_IDLE |                            00001 |                              000
+ PS2_STATE_2_COMMAND_OUT |                            00010 |                              010
+PS2_STATE_3_END_TRANSFER |                            00100 |                              011
+ PS2_STATE_4_END_DELAYED |                            01000 |                              100
+     PS2_STATE_1_DATA_IN |                            10000 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_ps2_transceiver_reg' using encoding 'one-hot' in module 'PS2_Controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:41 . Memory (MB): peak = 2142.891 ; gain = 103.695 ; free physical = 588 ; free virtual = 991
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---XORs : 
+	                8 Bit    Wide XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               36 Bit    Registers := 1     
+	               32 Bit    Registers := 14    
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 9     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 86    
++---RAMs : 
+	             128K Bit	(4096 X 32 bit)          RAMs := 1     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   4 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 30    
+	   8 Input   32 Bit        Muxes := 3     
+	   5 Input   32 Bit        Muxes := 1     
+	   6 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 7     
+	   9 Input   32 Bit        Muxes := 2     
+	   7 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 2     
+	   9 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 17    
+	   8 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 16    
+	   9 Input    5 Bit        Muxes := 2     
+	   5 Input    5 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   7 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   6 Input    2 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 26    
+	   2 Input    1 Bit        Muxes := 37    
+	   4 Input    1 Bit        Muxes := 9     
+	   7 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 2142.891 ; gain = 103.695 ; free physical = 552 ; free virtual = 967
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------+----------------------------------------------+---------------+----------------+
+|Module Name | RTL Object                                   | Depth x Width | Implemented As | 
++------------+----------------------------------------------+---------------+----------------+
+|system      | prs_game_inst/x7_segment_hex_inst/number_reg | 256x8         | Block RAM      | 
++------------+----------------------------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|system      | memory_reg | 4 K x 32(READ_FIRST)   | W |   | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+---------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives   | 
++------------+---------------------------+-----------+----------------------+--------------+
+|system      | picorv32_core/cpuregs_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------+---------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:01:04 . Memory (MB): peak = 2142.891 ; gain = 103.695 ; free physical = 239 ; free virtual = 732
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:28 . Memory (MB): peak = 2161.898 ; gain = 122.703 ; free physical = 108 ; free virtual = 277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|system      | memory_reg | 4 K x 32(READ_FIRST)   | W |   | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping	Report
++------------+---------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives   | 
++------------+---------------------------+-----------+----------------------+--------------+
+|system      | picorv32_core/cpuregs_reg | Implied   | 32 x 32              | RAM32M x 12	 | 
++------------+---------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I94[7] with 1st driver pin 'i_43/O' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I94[7] with 2nd driver pin 'GND' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net I94[7] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I94[6] with 1st driver pin 'i_44/O' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I94[6] with 2nd driver pin 'GND' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net I94[6] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I94[5] with 1st driver pin 'i_45/O' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I94[5] with 2nd driver pin 'GND' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net I94[5] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I94[4] with 1st driver pin 'i_46/O' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I94[4] with 2nd driver pin 'GND' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net I94[4] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I94[3] with 1st driver pin 'i_47/O' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I94[3] with 2nd driver pin 'GND' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net I94[3] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I94[2] with 1st driver pin 'i_48/O' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I94[2] with 2nd driver pin 'GND' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net I94[2] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I94[1] with 1st driver pin 'i_49/O' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I94[1] with 2nd driver pin 'GND' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net I94[1] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I94[0] with 1st driver pin 'i_50/O' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I94[0] with 2nd driver pin 'GND' [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net I94[0] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/belindabrown/Desktop/laboratorio-8-b-b-corp/src/verilog/7_segment_hex.v:133]
+INFO: [Synth 8-7052] The timing for the instance memory_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memory_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memory_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memory_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:01:41 . Memory (MB): peak = 2169.906 ; gain = 130.711 ; free physical = 107 ; free virtual = 230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:02:37 . Memory (MB): peak = 2169.906 ; gain = 130.711 ; free physical = 607 ; free virtual = 1127
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:02:37 . Memory (MB): peak = 2169.906 ; gain = 130.711 ; free physical = 596 ; free virtual = 1120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:02:39 . Memory (MB): peak = 2169.906 ; gain = 130.711 ; free physical = 572 ; free virtual = 1120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:02:39 . Memory (MB): peak = 2169.906 ; gain = 130.711 ; free physical = 571 ; free virtual = 1120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:02:40 . Memory (MB): peak = 2169.906 ; gain = 130.711 ; free physical = 537 ; free virtual = 1119
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:02:40 . Memory (MB): peak = 2169.906 ; gain = 130.711 ; free physical = 536 ; free virtual = 1119
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    88|
+|3     |LUT1     |     6|
+|4     |LUT2     |    97|
+|5     |LUT3     |   118|
+|6     |LUT4     |   180|
+|7     |LUT5     |   100|
+|8     |LUT6     |   436|
+|9     |RAM32M   |    12|
+|10    |RAMB18E1 |     1|
+|11    |RAMB36E1 |     4|
+|15    |FDRE     |   494|
+|16    |FDSE     |    53|
+|17    |IBUF     |     2|
+|18    |OBUF     |    26|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:02:40 . Memory (MB): peak = 2169.906 ; gain = 130.711 ; free physical = 535 ; free virtual = 1118
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 24 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:02:34 . Memory (MB): peak = 2169.906 ; gain = 27.016 ; free physical = 588 ; free virtual = 1175
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:02:40 . Memory (MB): peak = 2169.914 ; gain = 130.711 ; free physical = 583 ; free virtual = 1176
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2169.914 ; gain = 0.000 ; free physical = 488 ; free virtual = 1154
+INFO: [Netlist 29-17] Analyzing 105 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'system' is not ideal for floorplanning, since the cellview 'picorv32' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2169.914 ; gain = 0.000 ; free physical = 378 ; free virtual = 1172
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 38 Warnings, 24 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:02:57 . Memory (MB): peak = 2169.914 ; gain = 130.812 ; free physical = 526 ; free virtual = 1325
+INFO: [Common 17-1381] The checkpoint '/home/belindabrown/Desktop/laboratorio-8-b-b-corp/Lab8_Scissors-rock-paper_vivadoProject/Lab8_Scissors-rock-paper_vivadoProject.runs/synth_1/system.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  9 20:04:45 2020...
