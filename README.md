@@ -1,6 +1,6 @@
 # Nexys DDR 4 RISC-V picorv32
 
-University of Costa Rica
+University of Costa Rica <br/>
 August, 2020
 
 ## Integrants
