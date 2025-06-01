@@ -1,4 +1,4 @@
-# Nexys DDR 4 RISC-V picorv32
+# Nexys DDR 4 RISC-V picorv32 - Designs
 
 Costa Rica
 
